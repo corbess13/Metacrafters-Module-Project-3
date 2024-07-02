@@ -7,11 +7,13 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract MyToken is ERC20, Ownable {
     constructor() ERC20("MyToken", "MTK") {}
 
-    function mint(address to, uint256 amount) public onlyOwner {
+    // Minting function that only the owner can call
+    function mint(address to, uint256 amount) external onlyOwner {
         _mint(to, amount);
     }
 
-    function burn(uint256 amount) public {
+    // Burning function that any user can call
+    function burn(uint256 amount) external {
         _burn(msg.sender, amount);
     }
 }
