@@ -25,7 +25,7 @@ This project demonstrates the creation and use of a simple ERC20 token.
 
 ## Author
 
-CEDoromal (cesdoromal@mymail.mapua.edu.ph)
+MRCorbe (mrccorbe@mymail.mapua.edu.ph)
 
 ## License
 
